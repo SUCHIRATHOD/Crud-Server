@@ -12,8 +12,8 @@ connectDB().then(() => {
     app.use(cors());
     app.use("/api/user", userRoute);
 
-    app.listen(PORT, () => {
-        console.log(`Server is running on http://localhost:${PORT}`);
+    app.listen(7000, () => {
+        console.log(" 7000 Server is running on http://localhost:7000");
     });
 }).catch((error) => {
     console.error(`Failed to connect to MongoDB: ${error.message}`);
